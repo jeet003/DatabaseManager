@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/item_layout"
+    >
+
+
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/nameInput"
+        android:inputType="textCapSentences"
+        android:hint="@string/hintname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/item_name"
+
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/nameInput"
+        android:layout_alignParentLeft="true"
+        android:text="Address"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/addressInput"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textMultiLine"
+
+        android:lines="3"
+        android:maxLines="6"
+        android:minLines="3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_address"
+        android:hint="@string/hintadd"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/item_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/addressInput"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Phone" />
+    <EditText
+        android:id="@+id/phoneInput"
+        android:hint="@string/hintphone"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_phone"
+        android:inputType="phone"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/idate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/phoneInput"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date of Birth" />
+    <TextView
+        android:id="@+id/etxt_fromdate"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idate"
+        android:layout_centerHorizontal="true"
+        android:focusableInTouchMode="false"
+        android:hint="Choose DOB" />
+    <Button
+        android:text="Add"
+        android:id="@+id/addButton"
+        android:onClick="addButtonClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="none"
+
+        android:layout_below="@+id/etxt_fromdate"
+        android:layout_centerHorizontal="true"
+         />
+
+
+
+
+</RelativeLayout>

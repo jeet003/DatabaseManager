@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Database</string>
+    <string name="hintname">Enter valid name </string>
+    <string name="hintadd">Enter Valid Address</string>
+    <string name="hintphone">Enter Valid number</string>
+    <string name="Delete">Delete</string>
+    <string name="Cancel">Cancel</string>
+
+    <string-array name="menu">
+        <item>@string/Delete</item>
+        <item>@string/Cancel</item>
+    </string-array>
+
+
+
+</resources>
